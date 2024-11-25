@@ -1,6 +1,6 @@
 'use server';
 
-export const generateMemeText = async (image: String, context: String, format: String) => {
+export const generateMemeText = async (image: string, context: string, format: string) => {
     const payload = {
         "messages": [
             {
@@ -68,7 +68,7 @@ export const generateMemeText = async (image: String, context: String, format: S
         return (memeText)
     }
     catch(e) {
-        console.log(res)
+        console.log(e)
         return Error("You just broke something but Don't worry :) ")
     }
 }
