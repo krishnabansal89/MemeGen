@@ -244,10 +244,16 @@ const MemeGenerator = () => {
                 </Button>
                 <Button
                   variant="outline"
-                  disabled={!image}
-                  className="flex-1"
+                
+                  className="flex-1 z-10"
+                  onClick={()=>{
+                    location.assign("https://github.com/krishnabansal89/MemeGen")
+                    console.log("clicked")
+                  }}
                 >
-                  <Github className="w-5 h-5 mr-2" />
+                  <Github className="w-5 h-5 mr-2" onClick={()=>{
+
+                  }}/>
                   Github
                 </Button>
               </div>
